@@ -7,7 +7,7 @@
 	<br>
 	Támogatók: Belváros-Lipótváros Budapest V. kerületi Önkormányzat Magyarországi Bem J. Lengyel Kulturális Egyesület
 	<br>
-	<a href="https://www.polonia.hu/images/hirek/2022/zap.1-koncert_a.szilasi.jpg">MEGHÍVÓ</a>
+	<a href="https://www.polonia.hu/images/hirek/2022/zap.1-koncert_a.szilasi.jpg" target="_blank">MEGHÍVÓ</a>
 </p>
 <h3>A budapesti lengyel egyházközség szolidaritási gesztusa a szenvedő Ukrajna felé</h3>
 <p>
@@ -17,7 +17,7 @@
 	<br>
 	A 2022 március 6-i virrasztásra válaszul a szentmise után a budapesti Lengyel Templomban gyűjtést rendeztek az ukrajnai gyerekek javára, ennek eredményeképp 431.000 Ft, 50 euro és 210 złoty gyűlt össze, amelyet a lebombázott charkovi gyerekek javára küldenek.
 	<br>
-	Egyúttal tájékoztatunk mindenkit, hogy a továbbiakban - a Leszek Kryża atyát is az intézményben tudó - Lengyel Püspöki Konferencia Keleti Egyhát Megsegítéséért Intézményének bankszámláján keresztül további segítséget lehet nyújtani, ennek a linkje: <a href="https://wschod.misje.pl/kontakt-2/"> ITT</a> található. A közleménybe kérjük beírni: Drohobycz - na rzecz dzieci ze zbombardowanego Charkowa – a lebombázott charkovi gyermekek javára.
+	Egyúttal tájékoztatunk mindenkit, hogy a továbbiakban - a Leszek Kryża atyát is az intézményben tudó - Lengyel Püspöki Konferencia Keleti Egyhát Megsegítéséért Intézményének bankszámláján keresztül további segítséget lehet nyújtani, ennek a linkje: <a href="https://wschod.misje.pl/kontakt-2/" target="_blank"> ITT</a> található. A közleménybe kérjük beírni: Drohobycz - na rzecz dzieci ze zbombardowanego Charkowa – a lebombázott charkovi gyermekek javára.
 	<br><br>
 	A plébános atya minden adományozónak köszöni a segítséget!
 	<br><br>Inf. polonia.hu
