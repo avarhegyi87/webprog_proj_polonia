@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php if (file_exists('./logicals/'.$search['file'].'.php')) { include("./logicals/{$search['File']}.php"); } ?>
 <!DOCTYPE html>
 <html lang="hu-hu">
 <head>
@@ -11,22 +13,22 @@
 <header>
     <img src="./images/<?= $header['img-source'] ?>" alt="<?= $header['img-alt'] ?>">
     <h1><?= $wnd_title['title'] ?></h1>
-	<?php if (isset($wnd_title['motto'])) {
-		?>
-        <h2><?= $wnd_title['motto'] ?></h2>
-	<?php } ?>
+	<?php if (isset($wnd_title['motto'])) { ?><h2><?= $wnd_title['motto'] ?></h2><?php } ?>
+    <?php if (isset($_SESSION['login'])) { ?>Bejelentkezve: <strong><?=$_SESSION['ln']." ".$_SESSION['fn']." (".$_SESSION['login'].")" ?></strong><?php } ?>
 </header>
 <div id="wrapper">
     <aside id="nav">
         <nav>
             <ul>
 				<?php foreach ($pages as $url => $page) { ?>
-                    <li<?= (($page == $search) ? ' class="active"' : '') ?>>
-                        <a href="<?= ($url == '/') ? '.' : $url ?>">
-							<?= $page['text'] ?>
-                        </a>
-                    </li>
-				<?php } ?>
+                    <?php if (! isset($_SESSION['login']) && $page['menun'][0] || isset($_SESSION['login']) && $page['menun'][1]) { ?>
+                        <li<?= (($page == $search) ? ' class="active"' : '') ?>>
+                            <a href="<?= ($url == '/') ? '.' : $url ?>">
+                                <?= $page['text'] ?>
+                            </a>
+                        </li>
+				    <?php } ?>
+                <?php } ?>
             </ul>
         </nav>
     </aside>
