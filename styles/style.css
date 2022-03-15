@@ -1,0 +1,19 @@
+#nav {
+    background: red;
+    color: white;
+    padding: 5px 0px;
+}
+#menu-list {
+    list-style-type: none;
+}
+#menu-list li {
+    display: inline;
+}
+nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+}
+.active{
+    color: darkorange;
+}
