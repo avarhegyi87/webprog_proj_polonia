@@ -5,14 +5,14 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 						array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 		$dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-		$sqlselect = "select id, lastname, firstname from users where username = :username and password = sha1(:password)";
-		$sth = $dbh->prepare($sqlselect);
+		$sqlSelect = "select id, lastname, firstname from users where username = :username and password = sha1(:password)";
+		$sth = $dbh->prepare($sqlSelect);
 		$sth->execute(array(':username'=>$_POST['username'], ':password'=>$_POST['password']));
 		$row = $sth->fetch(PDO::FETCH_ASSOC);
 		if ($row) {
 			$_SESSION['ln'] = $row['lastname'];
 			$_SESSION['fn'] = $row['firstname'];
-			$_SESSION['login'] = $row['username'];
+			$_SESSION['login'] = $_POST['username'];
 		}
 	}
 	catch (PDOException $e) {

@@ -16,15 +16,15 @@ $footer = array(
 );
 
 $pages = array(
-	'/'=>array('file'=>'cimlap', 'text'=>'Címlap', 'menun'=>array(1,1)),
-	'onkormanyzat'=>array('file'=>'onkormanyzat', 'text'=>'Önkormányzat', 'menun'=>array(1,1)),
-	'galeria'=>array('file'=>'galeria', 'text'=>'Galéria', 'menun'=>array(1,1)),
-	'videok'=>array('file'=>'videok', 'text'=>'Videók', 'menun'=>array(1,1)),
-	'kapcsolat'=>array('file'=>'kapcsolat', 'text'=>'Kapcsolat', 'menun'=>array(1,1)),
-	'belepes'=>array('file'=>'belepes', 'text'=>'Belépés', 'menun'=>array(1,0)),
-	'kilepes'=>array('file'=>'kilep', 'text'=>'Kilépés', 'menun'=>array(0,1)),
-	'belep'=>array('file'=>'belep', 'text'=>'', 'menun'=>array(0,0)),
-	'regisztral'=>array('file'=>'regisztral', 'text'=>'', 'menun'=>array(0,0))
+	'/'=>array('file'=>'cimlap', 'text'=>'Címlap', 'on_menu'=>array(1,1)),
+	'onkormanyzat'=>array('file'=>'onkormanyzat', 'text'=>'Önkormányzat', 'on_menu'=>array(1,1)),
+	'galeria'=>array('file'=>'galeria', 'text'=>'Galéria', 'on_menu'=>array(1,1)),
+	'videok'=>array('file'=>'videok', 'text'=>'Videók', 'on_menu'=>array(1,1)),
+	'kapcsolat'=>array('file'=>'kapcsolat', 'text'=>'Kapcsolat', 'on_menu'=>array(1,1)),
+	'belepes'=>array('file'=>'belepes', 'text'=>'Belépés', 'on_menu'=>array(1,0)),
+	'kilepes'=>array('file'=>'kilepes', 'text'=>'Kilépés', 'on_menu'=>array(0,1)),
+	'belep'=>array('file'=>'belep', 'text'=>'', 'on_menu'=>array(0,0)),
+	'regisztral'=>array('file'=>'regisztral', 'text'=>'', 'on_menu'=>array(0,0))
 );
 
 $error_page = array('file'=>'404','text'=>'A keresett oldal nem található');

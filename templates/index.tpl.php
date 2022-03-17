@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php if (file_exists('./logicals/'.$search['file'].'.php')) { include("./logicals/{$search['File']}.php"); } ?>
+<?php if (file_exists('./logicals/'.$search['file'].'.php')) { include("./logicals/{$search['file']}.php"); } ?>
 <!DOCTYPE html>
 <html lang="hu-hu">
 <head>
@@ -21,9 +21,9 @@
         <nav>
             <ul>
 				<?php foreach ($pages as $url => $page) { ?>
-                    <?php if (! isset($_SESSION['login']) && $page['menun'][0] || isset($_SESSION['login']) && $page['menun'][1]) { ?>
+                    <?php if (! isset($_SESSION['login']) && $page['on_menu'][0] || isset($_SESSION['login']) && $page['on_menu'][1]) { ?>
                         <li<?= (($page == $search) ? ' class="active"' : '') ?>>
-                            <a href="<?= ($url == '/') ? '.' : $url ?>">
+                            <a href="<?= ($url == '/') ? '.' : ('?page=' . $url) ?>">
                                 <?= $page['text'] ?>
                             </a>
                         </li>

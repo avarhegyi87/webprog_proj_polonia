@@ -8,7 +8,7 @@
 <?php if(isset($message)) { ?>
 	<h1><?= $message ?></h1>
 	<?php if($again) { ?>
-		<a href="index.php?page=belepes">Próbálja újra!</a>
+		<a href="?page=belepes">Próbálja újra!</a>
 	<?php } ?>
 <?php } ?>
 </body>
