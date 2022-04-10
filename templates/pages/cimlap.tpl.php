@@ -1,4 +1,4 @@
-<h3 class="maintext">Információk</h3>
+<h3 class="intro">Információk</h3>
 <p>
 	A magyarországi lengyelség érdekképviseletének ellátására az Országos Lengyel Önkormányzat 1995-ben alakult. (Régi
 	neve: Országos Lengyel Kisebbségi Önkormányzat) (2011. évi CLXXIX. törvény a nemzetiségek jogairól). Az Országos
@@ -7,8 +7,9 @@
 	Iskolával, valamint az 1998-ban visszaszerzett (korábban államosított) Lengyel Házzal.
 </p>
 <iframe class="map"
-	src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10784.919712802159!2d19.128534!3d47.485434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dcca9bf7a9f7%3A0x4162679d137bd763!2zQnVkYXBlc3QsIMOBbGxvbcOhcyB1LiAxMCwgMTEwMiBNYWd5YXJvcnN6w6Fn!5e0!3m2!1shu!2sus!4v1647362247679!5m2!1shu!2sus"
-	width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.23404453606!2d19.12640671544732!3d47.4853538043393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dcca90b4a973%3A0x13c58745a8e07514!2zT3JzesOhZ29zIExlbmd5ZWwgw5Zua29ybcOhbnl6YXQ!5e0!3m2!1sen!2shu!4v1649605086173!5m2!1sen!2shu"
+	width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+	referrerpolicy="no-referrer-when-downgrade"></iframe>
 <h3>Lengyel - Magyar Barátság Napja</h3>
 <p>Dátum: 2022 március 23, 10:00 óra Helyszín: Győr, Bem tér</p>
 <h3>Választási és népszámlálási tájékoztatási rendezvény</h3>
