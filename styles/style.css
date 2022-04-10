@@ -2,17 +2,19 @@
     background: red;
     padding: 5px 0;
 }
-#menu-list ul {
+nav ul  {
     list-style-type: none;
 }
-#menu-list li {
+nav li {
     display: inline;
+    
 }
 nav ul a {
     text-decoration: none;
     color: white;
     padding: 0 5px;
+
 }
-.active{
-    color: darkorange;
+nav ul li.active {
+   border: 3px solid darkorange;
 }
