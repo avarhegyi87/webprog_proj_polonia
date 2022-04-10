@@ -1,10 +1,21 @@
+
+#wrapper {
+    margin: auto;
+    width: 80%;
+    border: 3px solid red;
+    padding: 10px;
+}
+
 #nav {
     background: red;
     padding: 5px 0;
+    text-align: center;
 }
+
 nav ul  {
     list-style-type: none;
 }
+
 nav li {
     display: inline;
     
@@ -13,8 +24,26 @@ nav ul a {
     text-decoration: none;
     color: white;
     padding: 0 5px;
+    text-transform: uppercase;}
 
-}
 nav ul li.active {
-   border: 3px solid darkorange;
+   border-bottom-style: solid;
+   border-color: darkorange;
+}
+
+footer {
+background-color: grey;
+color: white;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#content {
+background-color: whitesmoke;
+}
+
+
+#content h3{
+text-align: center;
 }
