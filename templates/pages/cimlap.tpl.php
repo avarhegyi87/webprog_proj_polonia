@@ -1,4 +1,4 @@
-<h3 class="intro">Információk</h3>
+<h3 class="intro">Bemutatkozás</h3>
 <p>
 	A magyarországi lengyelség érdekképviseletének ellátására az Országos Lengyel Önkormányzat 1995-ben alakult. (Régi
 	neve: Országos Lengyel Kisebbségi Önkormányzat) (2011. évi CLXXIX. törvény a nemzetiségek jogairól). Az Országos
@@ -6,10 +6,16 @@
 	Levéltárával, a 2004-ben alapított és szétszórtan az egész ország területén működő Országos Lengyel Nyelvoktató
 	Iskolával, valamint az 1998-ban visszaszerzett (korábban államosított) Lengyel Házzal.
 </p>
-<iframe class="map"
+<iframe class="maps"
 	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.23404453606!2d19.12640671544732!3d47.4853538043393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dcca90b4a973%3A0x13c58745a8e07514!2zT3JzesOhZ29zIExlbmd5ZWwgw5Zua29ybcOhbnl6YXQ!5e0!3m2!1sen!2shu!4v1649605086173!5m2!1sen!2shu"
 	width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
 	referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/-IDshyskHZQ" title="YouTube video player"
+	frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen></iframe>
+<video width="533" height="300" controls>
+	<source src="./videos/sample-5s.mp4" type="video/mp4">
+</video>
 <h3>Lengyel - Magyar Barátság Napja</h3>
 <p>Dátum: 2022 március 23, 10:00 óra Helyszín: Győr, Bem tér</p>
 <h3>Választási és népszámlálási tájékoztatási rendezvény</h3>
@@ -39,7 +45,7 @@
 	charkovi gyerekek javára küldenek.
 	<br>
 	Egyúttal tájékoztatunk mindenkit, hogy a továbbiakban - a Leszek Kryża atyát is az intézményben tudó - Lengyel
-	Püspöki Konferencia Keleti Egyhát Megsegítéséért Intézményének bankszámláján keresztül további segítséget lehet
+	Püspöki Konferencia Keleti Egyház Megsegítéséért Intézményének bankszámláján keresztül további segítséget lehet
 	nyújtani, ennek a linkje: <a href="https://wschod.misje.pl/kontakt-2/" target="_blank"> ITT</a> található. A
 	közleménybe kérjük beírni: Drohobycz - na rzecz dzieci ze zbombardowanego Charkowa – a lebombázott charkovi
 	gyermekek javára.
