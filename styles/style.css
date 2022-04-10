@@ -1,16 +1,37 @@
-header h1, h2 {
+header {
     margin: auto;
     width: 80%;
     padding: 10px;
+    background-color: whitesmoke;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
 }
 
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
 
+html {
+    background-image: url(../images/bg.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: whitesmoke;
+
+}
 
 #wrapper {
     margin: auto;
     width: 80%;
-    border: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
     padding: 10px;
+    background-color: whitesmoke;
+
 }
 
 #nav {
