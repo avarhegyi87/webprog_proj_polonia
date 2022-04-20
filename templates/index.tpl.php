@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title><?= $wnd_title['title'] . ((isset($wnd_title['motto'])) ? (' - ' . $wnd_title['motto']) : '') ?></title>
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <script type="text/javascript" src="js/main.js"></script>
 	<?php if (file_exists('./styles/' . $search['file'] . '.css')) { ?>
         <link rel="stylesheet" href="./styles/<?= $search['file'] ?>.css" type="text/css"><?php } ?>
 </head>
