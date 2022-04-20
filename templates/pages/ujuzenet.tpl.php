@@ -1,4 +1,5 @@
 <?php
+<<<<<<< Updated upstream
 if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg']))
 {
     echo '<div class="elso">';
@@ -41,3 +42,24 @@ else {
     echo "</div>";
 }
 ?>
+=======
+
+	if(!isset($_POST['nev']) || strlen($_POST['nev']) < 5)
+	{
+		exit("Hibás név: ".$_POST['nev']);
+	}
+
+	$re = '/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/';
+	if(!isset($_POST['email']) || !preg_match($re,$_POST['email']))
+	{
+		exit("Hibás email: ".$_POST['email']);
+	}
+
+	if(!isset($_POST['szoveg']) || empty($_POST['szoveg']))
+	{
+		exit("Hibás szöveg: ".$_POST['szoveg']);
+	}
+
+
+?>
+>>>>>>> Stashed changes
