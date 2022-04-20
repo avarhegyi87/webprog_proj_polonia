@@ -8,21 +8,16 @@ if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg'])) {
         
         $sqlInsert = "insert into uzenet(id, nev, email, szoveg)
 						values(0, :nev, :email, :szoveg)";
-			$stmt = $dbh->prepare($sqlInsert);
-			$stmt->execute(array(':nev' => $_POST['nev'], ':email' => $_POST['email'],
-							   ':szoveg' => $_POST['szoveg'] ));
-			if  
-            {
-				$message = "Üzenetét elmentettük adatbázisunkban.";
-				$again = false;
-            }
-
-			else 
-            {
-				$message = "Üzenetét nem sikerült elmentetnünk az adatbázisunkban";
-				$again = true;
-			}
-        }  
+		$stmt = $dbh->prepare($sqlInsert);
+		$stmt->execute(array(':nev' => $_POST['nev'], ':email' => $_POST['email'],
+						':szoveg' => $_POST['szoveg']));
+		if ($count = $stmt->rowCount()) {
+			$message = "Üzenetét elmentettük adatbázisunkban.";
+			$again = false;
+		} else {
+			$message = "Üzenetét nem sikerült elmentetnünk az adatbázisunkban";
+			$again = true;
+		}  
 	} catch (PDOException $e) {
 		$message = "Hiba az üzenet adatbázisba mentésekor: " . $e->getMessage();
 		$again = true;
