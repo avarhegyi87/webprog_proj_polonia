@@ -1,8 +1,7 @@
-<?php
-if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg']))
-{
+<?php if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg'])) { 
+    
     echo '<div class="elso">';
-    echo "Az Ön üzenet a következő: <br />";
+    echo "Az Ön üzenete a következő: <br />";
     echo "<br />";
     echo "</div>";
 
@@ -21,23 +20,14 @@ if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg']))
     echo "<b>Az ön üzenete: </b>".$msg."<br />";
     echo "</div>";
 
-    if(isset($message)) {
+    if(isset($form_message)) {
         echo '<div class="elso">';
-        echo $message;
+        echo $form_message;
         echo "</div>";
     }
-}
-
-else {
+} else {
     echo '<div class="elso">';
-    echo "Az Ön üzenet a következő: <br />";
+    echo 'Nem küldött üzenetet. Az <a href="?page=uzenetform">"Írjon nekünk"</a> menüpontban megteheti.';
     echo "<br />";
     echo "</div>";
-
-    echo '<div class="elso">';
-    echo 'Nem adott meg üzenetet. Az <a href="?page=kapcsolat">"Írjon nekünk"</a> menüpontban megteheti.';
-    echo " menüponttal megteheti!";
-    echo "<br />";
-    echo "</div>";
-}
-?>
+} ?>

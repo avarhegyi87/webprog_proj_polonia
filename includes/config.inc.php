@@ -1,6 +1,6 @@
 <?php
 	$wnd_title = array(
-		'title'=>'(másolat) Polonia Online',
+		'title'=>'Polonia Online (másolat)',
 		'motto'=>'Országos Lengyel Önkormányzat | Ogólnokrajowy Samorząd Polski na Węgrzech'
 	);
 
@@ -11,11 +11,11 @@
 
 	$footer = array(
 		'copyright'=>'Copyright '.date('Y').'.',
-		'company'=>'Ádám Várhegyi-Miłoś (Y1JE9I)',
+		'company'=>'Ádám Várhegyi-Miłoś (Y1JE9I) & Kecskeméti Zsolt András (CRQOKX)',
 		'original'=>'https://www.polonia.hu'
 	);
 
-	$PICFOLDER = './images/';
+	$PICFOLDER = './gallery/';
 	$FORMATS = array('jpg', 'png');
 	$ALLOWED_PICTYPES = array('image/jpeg', 'image/png');
 	$DATEFORMAT = "Y.m.d. H:i";
@@ -25,9 +25,9 @@
 		'/'=>array('file'=>'cimlap', 'text'=>'Címlap', 'on_menu'=>array(1,1)),
 		'archivum'=>array('file'=>'archivum', 'text'=>'Archívum', 'on_menu'=>array(1,1)),
 		'galeria'=>array('file'=>'galeria', 'text'=>'Galéria', 'on_menu'=>array(1,1)),
-		'kapcsolat'=>array('file'=>'kapcsolat', 'text'=>'Írjon nekünk!', 'on_menu'=>array(1,1)),
-		'ujuzenet'=>array('file'=>'ujuzenet', 'text'=>'Az Ön üzenete', 'on_menu'=>array(1,1)),
-		'osszuzenet'=>array('file'=>'osszuzenet', 'text'=>'Üzeneteink', 'on_menu'=>array(1,1)),
+		'uzenetform'=>array('file'=>'uzenetform', 'text'=>'Írjon nekünk!', 'on_menu'=>array(1,1)),
+		'uzenetmutat'=>array('file'=>'uzenetmutat', 'text'=>'Az Ön üzenete', 'on_menu'=>array(1,1)),
+		'osszuzenet'=>array('file'=>'osszuzenet', 'text'=>'Üzenőfal', 'on_menu'=>array(1,1)),
 		'belepes'=>array('file'=>'belepes', 'text'=>'Belépés', 'on_menu'=>array(1,0)),
 		'kilepes'=>array('file'=>'kilepes', 'text'=>'Kilépés', 'on_menu'=>array(0,1)),
 		'belep'=>array('file'=>'belep', 'text'=>'', 'on_menu'=>array(0,0)),
