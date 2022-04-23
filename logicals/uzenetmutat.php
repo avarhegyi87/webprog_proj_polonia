@@ -9,22 +9,19 @@ if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg'])) {
         $sqlInsert = "insert into msgs(username, real_name, email, msg_text)
 						values(:username, :real_name, :email, :text)";
 		$stmt = $dbh->prepare($sqlInsert);
-		$stmt->execute(array(':username' =>  $_POST['nev'], 
-							':real_name' => isset($_SESSION['login']) ? $_SESSION['login'] : 'Vendég',
+		$stmt->execute(array(':username' => isset($_SESSION['login']) ? $_SESSION['login'] : 'Vendég', 
+							':real_name' => $_POST['nev'],
 							':email' => $_POST['email'],
 							':text' => $_POST['szoveg']));
 		if ($count = $stmt->rowCount()) {
-			$message = "Üzenetét elmentettük adatbázisunkban.";
-			$success = true;
+			$form_message = "Üzenetét elmentettük adatbázisunkban.";
+			$form_success = true;
 		} else {
-			$message = "Üzenetét nem sikerült elmentetnünk az adatbázisunkban";
-			$success = false;
+			$form_message = "Üzenetét nem sikerült elmentetnünk az adatbázisunkban";
+			$form_success = false;
 		}  
 	} catch (PDOException $e) {
-		$message = "Hiba az üzenet adatbázisba mentésekor: " . $e->getMessage();
-		$again = true;
+		$form_message = "Hiba az üzenet adatbázisba mentésekor: " . $e->getMessage();
+		$form_success = false;
 	}
-} else {
-	header("Location: .");
-}
-?>
+} ?>

@@ -5,13 +5,10 @@
 		);
 		$dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-        $stmt = $dbh->query('SELECT * FROM msg ORDER BY msg_id DESC');
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $stmt = $dbh->query('SELECT * FROM msgs ORDER BY msg_id DESC');
+        $qry_results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        //$sqlselect = "select * from msg order by msg_id desc";
-        //$stmt = $dbh->prepare($sqlInsert);
-        //$stmt->execute();
-        if ($results) {
+        if ($qry_results) {
 			$dblist_message = "Önök írták!";
             $dblist_success = true;
 		} else {

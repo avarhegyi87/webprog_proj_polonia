@@ -1,5 +1,5 @@
 <h1 class="intro">Írjon nekünk...</h1>
-    <form name="kapcsolat" action="?page=msg" onsubmit="return ellenoriz();" method="post">
+    <form name="kapcsolat" action="?page=uzenetmutat" onsubmit="return ellenoriz();" method="post">
 
         <div class="form">
           
