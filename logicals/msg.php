@@ -6,17 +6,19 @@ if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg'])) {
 		);
 		$dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         
-        $sqlInsert = "insert into uzenet(id, nev, email, szoveg)
-						values(0, :nev, :email, :szoveg)";
+        $sqlInsert = "insert into msgs(username, real_name, email, msg_text)
+						values(:username, :real_name, :email, :text)";
 		$stmt = $dbh->prepare($sqlInsert);
-		$stmt->execute(array(':nev' => $_POST['nev'], ':email' => $_POST['email'],
-						':szoveg' => $_POST['szoveg']));
+		$stmt->execute(array(':username' =>  $_POST['nev'], 
+							':real_name' => isset($_SESSION['login']) ? $_SESSION['login'] : 'Vendég',
+							':email' => $_POST['email'],
+							':text' => $_POST['szoveg']));
 		if ($count = $stmt->rowCount()) {
 			$message = "Üzenetét elmentettük adatbázisunkban.";
-			$again = false;
+			$success = true;
 		} else {
 			$message = "Üzenetét nem sikerült elmentetnünk az adatbázisunkban";
-			$again = true;
+			$success = false;
 		}  
 	} catch (PDOException $e) {
 		$message = "Hiba az üzenet adatbázisba mentésekor: " . $e->getMessage();
