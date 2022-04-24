@@ -1,4 +1,4 @@
-<h2>Galéria</h2>
+<h1 class="intro">Galéria</h1>
 <h3>Feltöltés a galériába</h3>
 <?php
     include('./includes/config.inc.php');
@@ -45,7 +45,7 @@
         </form>
         <?php
     } else {
-        ?>Képfeltöltéshez jelentkezzen be a felhasználónevével és jelszavával, vagy regisztráljon, ha még nincsen fiókja!<?php
+        ?>Képfeltöltéshez <a href="?page=belepes">Jelentkezzen</a> be a felhasználónevével és jelszavával, vagy regisztráljon, ha még nincsen fiókja!<?php
     }
     
 ?>
