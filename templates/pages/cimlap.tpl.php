@@ -26,6 +26,7 @@
     </div>
 
 	<div class="justify-content-center">
+		<br><h2>Híreink</h2>
         <h3 class="intro">Lengyel - Magyar Barátság Napja</h3>
         <p class="cimlapszoveg">Dátum: 2022 március 23, 10:00 óra
 		<br>

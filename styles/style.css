@@ -86,8 +86,14 @@ footer {
     border-right: 3px solid red;
 }
 
-#original  {
-color: whitesmoke;
+#original {
+    color: crimson;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#authors-note {
+    font-size: small;
 }
 
 #container {
