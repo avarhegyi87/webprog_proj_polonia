@@ -1,17 +1,23 @@
 <?php
     if (isset($dblist_message)) {
-        echo "<h3>" . $dblist_message . "</h3>";
+        echo "</br>";
+        echo "<h1 class='intro'>" . $dblist_message . "</h1>";
+        echo "</br>";
         if ($dblist_success) { ?>
-            <table border=1>
+            <table class="table table-striped">
+            <thead>
             <tr>
-                <th>Felhasználó</th>
-                <th>Név</th>
-                <th>Email cím</th>
-                <th>Üzenet</th>
+                <th scope="col">#</th>
+                <th scope="col">Felhasználó</th>
+                <th scope="col">Név</th>
+                <th scope="col">Email cím</th>
+                <th scope="col">Üzenet</th>
             </tr>
+        </thead>
             <?php
             foreach ($qry_results as $row) {
                 echo "<tr>";
+                echo "<td>" . $row['msg_id'] . "</td>";
                 echo "<td>" . $row['username'] . "</td>";
                 echo "<td>" . $row['real_name'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";

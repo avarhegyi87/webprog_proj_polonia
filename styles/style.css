@@ -16,7 +16,7 @@ img {
 }
 
 html {
-    background-image: url(../images/bg.jpg);
+    background-image: url(./images/bg.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
     background-color: whitesmoke;
@@ -37,10 +37,13 @@ html {
     background: red;
     padding: 5px 0;
     text-align: center;
+    text-decoration: none;
+    text-align: center;
 }
 
 nav ul  {
     list-style-type: none;
+    
 }
 
 nav li {
@@ -51,16 +54,26 @@ nav ul a {
     text-decoration: none;
     color: white;
     padding: 0 5px;
-    text-transform: uppercase;}
-
-li.active {
-   border-bottom-style: solid;
-   border-color: darkorange;
-   background-color: #666;
-   padding: 0 5px;
-   color: white;
+    text-transform: uppercase;
 }
 
+nav a:hover {
+    text-decoration: none;
+    color: BLACK;
+    background-color: #666;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+li.active {
+        border-bottom-style: solid;
+        border-color: darkorange;
+        background-color: #666;
+        padding: 0 5px;
+        color: white;
+}
+     
+     
 footer {
     background-color: grey;
     color: white;
@@ -77,12 +90,12 @@ footer {
 color: whitesmoke;
 }
 
-#content {
+#container {
     background-color: whitesmoke;
     text-decoration: none;
 }
 
-#content {
+#container {
 text-align: center;
 }
 
@@ -132,3 +145,16 @@ input[type=text], select, textarea {
     resize: vertical;
   }
   
+  .justify-content-center {
+
+    background-color: white;
+  }
+
+  .col-sm-8 {
+
+    background-color: white;
+  }
+
+  .col-sm-4 {
+    background-color: white;
+  }

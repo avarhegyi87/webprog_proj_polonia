@@ -4,9 +4,14 @@
 <html lang="hu-hu">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?= $wnd_title['title'] . ((isset($wnd_title['motto'])) ? (' - ' . $wnd_title['motto']) : '') ?></title>
         <link rel="stylesheet" href="./styles/style.css" type="text/css">
         <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <?php if (file_exists('./styles/' . $search['file'] . '.css')) { ?>
             <link rel="stylesheet" href="./styles/<?= $search['file'] ?>.css" type="text/css"><?php } ?>
     </head>
@@ -22,7 +27,7 @@
         </header>
         <div id="wrapper">
             <aside id="nav">
-                <nav>
+                <nav class="navbar navbar-expand-lg navbar-dark">
                     <ul>
                         <?php foreach ($pages as $url => $page) { ?>
                             <?php if (! isset($_SESSION['login']) && $page['on_menu'][0] || isset($_SESSION['login']) && $page['on_menu'][1]) { ?>
@@ -36,7 +41,7 @@
                     </ul>
                 </nav>
             </aside>
-            <div id="content">
+            <div id="container">
                 <?php include("./templates/pages/{$search['file']}.tpl.php"); ?>
             </div>
         </div>
