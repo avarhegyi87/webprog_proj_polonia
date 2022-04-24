@@ -38,7 +38,7 @@
                                 <a href="<?= ($url == '/') ? '.' : ('?page=' . $url) ?>">
                                     <?= $page['text'] ?>
                                 </a>
-                                </li>
+                            </li>
                             <?php } ?>
                         <?php } ?>
                 </ul>

@@ -43,12 +43,10 @@ html {
 
 nav ul  {
     list-style-type: none;
-    
 }
 
 nav li {
     display: inline;
-    
 }
 nav ul a {
     text-decoration: none;
