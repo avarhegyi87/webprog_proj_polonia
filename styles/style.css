@@ -45,13 +45,14 @@ html {
     text-align: center;
 }
 
-nav ul  {
+nav ul {
     list-style-type: none;
 }
 
 nav li {
     display: inline;
 }
+
 nav ul a {
     text-decoration: none;
     color: white !important;
@@ -74,7 +75,7 @@ nav a:hover {
 .nav-menu a:after {
     transform: translateX(-50%) scaleX(0);
     transition: transform 250ms;
-  }
+}
 
 .active {
     border-bottom-style: solid !important;
@@ -95,6 +96,10 @@ footer {
     border-right: 3px solid red;
 }
 
+.origbtn {
+    font-size: smaller;
+}
+
 #original {
     color: crimson;
     font-style: italic;
@@ -111,31 +116,29 @@ footer {
 }
 
 #container {
-text-align: center;
+    text-align: center;
 }
 
 h3.arch {
-text-align: left;
-color: red;
+    text-align: left;
+    color: red;
 }
 
 h3.intro {
-color:red;
-text-align: center;
+    color: red;
+    text-align: center;
 }
 
 h1.intro {
-    color:red;
+    color: red;
     text-align: center;
-    }
+}
 
-.cimlapszoveg
-{
+.cimlapszoveg {
     text-align: left;
 }
 
-.elso
-{
+.elso {
     margin: auto;
     width: 60%;
     padding: 10px;
@@ -143,31 +146,32 @@ h1.intro {
     background-color: white;
 }
 
-
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 50%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-  }
+}
 
-  input[type=password] {
+input[type=password] {
     width: 50%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-  }
-  
-  .justify-content-center {
-    background-color: white;
-  }
+}
 
-  .col-sm-8 {
+.justify-content-center {
     background-color: white;
-  }
+}
 
-  .col-sm-4 {
+.col-sm-8 {
     background-color: white;
-  }
+}
+
+.col-sm-4 {
+    background-color: white;
+}

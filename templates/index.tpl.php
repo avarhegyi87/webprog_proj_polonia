@@ -30,7 +30,7 @@
     </header>
     <div id="wrapper">
         <aside id="nav">
-            <nav class="navbar navbar-expand-sm navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,8 +45,8 @@
                                 </li>
                             <?php } ?>
                         <?php } ?>
-                        <button class="btn btn-light navbar-btn" onclick="window.open('<?= $footer['original'] ?>')" target="_blank">
-                            Ugrás az eredeti oldalra
+                        <button class="btn btn-light navbar-btn origbtn" onclick="window.open('<?= $footer['original'] ?>')" target="_blank">
+                            Az eredeti oldal
                         </button>
                     </ul>
                 </div>
