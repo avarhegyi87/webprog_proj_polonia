@@ -80,7 +80,6 @@ nav a:hover {
     border-bottom-style: solid !important;
     border-color: dodgerblue !important;
     background-color: #666 !important;
-    /*padding: 0 5px;*/
     color: black;
 }
 
@@ -162,12 +161,10 @@ input[type=text], select, textarea {
   }
   
   .justify-content-center {
-
     background-color: white;
   }
 
   .col-sm-8 {
-
     background-color: white;
   }
 
