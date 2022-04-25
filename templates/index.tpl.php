@@ -23,25 +23,33 @@
     <header>
         <img src="./images/<?= $header['img-source'] ?>" alt="<?= $header['img-alt'] ?>">
         <h1><?= $wnd_title['title'] ?></h1>
-        <?php if (isset($wnd_title['motto'])) { ?><h2><?= $wnd_title['motto'] ?></h2><?php } ?>
+        <?php if (isset($wnd_title['motto'])) { ?><h4 id="motto"><?= $wnd_title['motto'] ?></h4><?php } ?>
         <?php if (isset($_SESSION['login'])) {
         ?>Bejelentkezve: <strong><?= $_SESSION['ln'] . " " . $_SESSION['fn'] . " (" . $_SESSION['login'] . ")" ?></strong>
     <?php } ?>
     </header>
     <div id="wrapper">
         <aside id="nav">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <ul>
-                    <?php foreach ($pages as $url => $page) { ?>
-                        <?php if (!isset($_SESSION['login']) && $page['on_menu'][0] || isset($_SESSION['login']) && $page['on_menu'][1]) { ?>
-                            <li<?= (($page == $search) ? ' class="active"' : '') ?>>
-                                <a href="<?= ($url == '/') ? '.' : ('?page=' . $url) ?>">
-                                    <?= $page['text'] ?>
-                                </a>
-                            </li>
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <?php foreach ($pages as $url => $page) { ?>
+                            <?php if (!isset($_SESSION['login']) && $page['on_menu'][0] || isset($_SESSION['login']) && $page['on_menu'][1]) { ?>
+                                <li class="nav-item">
+                                    <a <?= (($page == $search) ? ' class="nav-link active"' : 'class="nav-link"') ?> href="<?= ($url == '/') ? '.' : ('?page=' . $url) ?>">
+                                        <?= $page['text'] ?>
+                                    </a>
+                                </li>
                             <?php } ?>
                         <?php } ?>
-                </ul>
+                        <button class="btn btn-light navbar-btn" onclick="window.open('<?= $footer['original'] ?>')" target="_blank">
+                            Ugrás az eredeti oldalra
+                        </button>
+                    </ul>
+                </div>
             </nav>
         </aside>
         <div id="container">

@@ -23,6 +23,10 @@ html {
 
 }
 
+#motto {
+    font-size: small;
+}
+
 #wrapper {
     margin: auto;
     width: 80%;
@@ -50,28 +54,36 @@ nav li {
 }
 nav ul a {
     text-decoration: none;
-    color: white;
+    color: white !important;
     padding: 0 5px;
     text-transform: uppercase;
 }
 
 nav a:hover {
     text-decoration: none;
-    color: BLACK;
-    background-color: #666;
-    padding: 0 5px;
+    color: white !important;
+    background-color: #666 !important;
+    transition: 0.9s;
     text-transform: uppercase;
 }
 
-li.active {
-        border-bottom-style: solid;
-        border-color: darkorange;
-        background-color: #666;
-        padding: 0 5px;
-        color: white;
+.nav-menu a:hover:after {
+    transform: translateX(-50%) scaleX(1);
 }
-     
-     
+
+.nav-menu a:after {
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 250ms;
+  }
+
+.active {
+    border-bottom-style: solid !important;
+    border-color: dodgerblue !important;
+    background-color: #666 !important;
+    /*padding: 0 5px;*/
+    color: black;
+}
+
 footer {
     background-color: grey;
     color: white;
