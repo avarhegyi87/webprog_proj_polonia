@@ -1,5 +1,19 @@
 <?php
 if (isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['szoveg'])) {
+	$emailre = '/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/';
+	if (strlen($_POST['nev']) < 5) {
+		$form_message = "Hibás név: " . $_POST['nev'] . ". A névnek legalább 5 karakter hosszúnak kell lennie.";
+		$form_success = false;
+		return;
+	} elseif (!preg_match($emailre, $_POST['email'])) {
+		$form_message = "Hibás email cím: " . $_POST['email'];
+		$form_success = false;
+		return;
+	} elseif (!strlen($_POST['szoveg']) > 0) {
+		$form_message = "Nem lett megadva üzenet.";
+		$form_success = false;
+		return;
+	}
 	try {
 		$dbh = new PDO('mysql:host=localhost;dbname=polonia_users', 'root', '',
 					   array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
