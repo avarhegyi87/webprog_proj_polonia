@@ -25,7 +25,6 @@
                     $msg[] = " Fájl feltöltve: " . $file['name'][$i];
                 }
             }
-            //print_r($msg);
         }
     }
 ?>
